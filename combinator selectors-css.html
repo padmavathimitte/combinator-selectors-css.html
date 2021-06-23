@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>combinator selectors</title>
+	<style type="text/css">
+		.sample p
+			{
+			color:green
+			}
+		.sample h2
+			{
+				text-align: center;
+			}	
+		.child-selector > p
+				{
+				color:blue
+				}
+		.adj-selector + p
+				{
+				color:yellow
+				}
+		 h1
+				{
+					color:red ;
+					text-align: center;
+				}
+		</style>		
+</head>
+<body>
+	<h1>DESENDANT SELECTORS(space)</h1>
+	<div class="sample">
+		<p>we use SPACE after the class name,and then p tag or h tag</P>
+		
+		<h2>we use SPACE after the class name,and then p tag or h tag</h2>
+		
+		<p>we use SPACE after the class name,and then p tag or h tag</p>
+		
+		<h2>we use SPACE after the class name,and then p tag or h tag</h2>
+	</div>
+	<h1>CHILD SELECTOR(>)</h1>
+	<div class="child-selector">
+		<p>
+			we use ">" symbol after the class name in child selector ,then p tag or h tag
+		</p>
+		<h2>
+			we use ">" symbol after the class name in child selector ,then p tag or h tag
+		</h2>
+		<span><p>
+			we use ">" symbol after the class name in child selector ,then p tag or h tag
+		</p></span>
+		<h2>
+			we use ">" symbol after the class name in child selector ,then p tag or h tag
+		</h2>
+	</div>
+	<h1>ADJACENT SIBLING SELECTOR(+)</h1>
+	<div class="adj-selector">
+		<h2> we use "+" symbol after the class name ,then p tag or h tag</h2>
+	</div>
+		<p> we use "+" symbol after the class name ,then p tag or h tag</p>
+		<p> we use "+" symbol after the class name ,then p tag or h tag</p>
+		<p> we use "+" symbol after the class name ,then p tag or h tag</p>
+</body>
+</html>
